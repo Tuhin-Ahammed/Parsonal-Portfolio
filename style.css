@@ -129,6 +129,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 20px 120px;
+  gap: 40px;
 }
 
 .about-containt-left-side {
