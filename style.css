@@ -6,11 +6,9 @@
 
 .home-container {
   position: relative;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.6)
-    ),
+      rgba(0, 0, 0, 0.6)),
     url(img/bk-img.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -20,6 +18,17 @@
 
 .home-container .logo {
   font-size: 20px;
+  display: flex;
+}
+
+.home-container img {
+  width: 200px;
+  height: 60px;
+}
+
+.home-container img:hover {
+  transform: scale(150%);
+  transform-origin: left;
 }
 
 .home-container .navber-section {
@@ -36,7 +45,7 @@
 
 .home-container .navber-section .nav-links ul {
   display: flex;
-  gap: 30px;
+
   list-style: none;
 }
 
@@ -44,12 +53,34 @@
   text-decoration: none;
   color: white;
   font-size: 20px;
+  padding: 10px 20px;
+
+}
+
+.home-container .navber-section .nav-links ul li a:hover {
+  background-color: #747979;
+  border-radius: 20px;
+  border: 2px solid #0dcaf0;
+  transform: scale(130%);
+
 }
 
 .social-icon {
   display: flex;
   gap: 20px;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.social-icon i {
+  border: 2px solid #0dcaf0;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.social-icon i:hover {
+  background-color: rgb(13, 202, 240);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .home-containt {
@@ -157,9 +188,16 @@
   padding: 15px 40px;
   border-radius: 50px;
   border-color: #0dcaf0;
-  color: #f2f6f7;
-  background-color: #0ba2c1;
+  color: white;
+  background-color: rgb(13, 202, 240);
   margin-top: 25px;
+
+}
+
+.dowenload-cv a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 .dowenload-cv:hover {
@@ -174,17 +212,17 @@
   justify-content: space-around;
 }
 
-.about-section-footer > div {
+.about-section-footer>div {
   width: 100%;
   text-align: center;
   color: rgb(142, 154, 157);
 }
 
-.about-section-footer > div > h1 {
+.about-section-footer>div>h1 {
   font-size: 45px;
 }
 
-.about-section-footer > div > h2 {
+.about-section-footer>div>h2 {
   font-size: 20px;
 }
 
@@ -278,6 +316,7 @@
   grid-template-columns: auto auto;
   text-align: left;
   padding-left: 70px;
+  padding-right: 70px;
 }
 
 .my-education-containt {
@@ -288,12 +327,195 @@
   border-collapse: collapse;
   margin-top: 30px;
 }
+
 .session {
   font-size: 13px;
   color: white;
-  background-color: #0ba2c1;
+  background-color: rgb(13, 202, 240);
   width: 100px;
   text-align: center;
   border-radius: 5px;
   padding: 5px 5px;
+}
+
+.my-education-containt h3 {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.my-education-containt h4 {
+  font-size: 20px;
+  color: rgb(218, 57, 57);
+  padding: 0px 5px;
+}
+
+.my-education-containt p {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  padding: 5px 5px;
+  padding-top: 20px;
+}
+
+.resume-container .resume-containt {
+  gap: 40px;
+
+}
+
+.my-skill-container {
+  padding-left: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.my-skill-containt {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 30px;
+  margin-right: 70px;
+  gap: 60px;
+}
+
+.skill-1 {
+  padding-bottom: 30px;
+}
+
+.skill-1 .containt h2 {
+  margin-bottom: 10px;
+
+}
+
+.skill-2 {
+  padding-bottom: 30px;
+}
+
+.skill-2 .containt h2 {
+  margin-bottom: 10px;
+
+}
+
+.skill-3 {
+  padding-bottom: 30px;
+}
+
+.skill-3 .containt h2 {
+  margin-bottom: 10px;
+
+}
+
+.skills-html {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(230, 226, 226);
+  border-radius: 10px;
+}
+
+.skill-color-web {
+  width: 65%;
+  height: 10px;
+  background-color: rgb(13, 202, 240);
+  border-radius: 10px;
+}
+
+.skill-color-java {
+  width: 80%;
+  height: 10px;
+  background-color: rgb(13, 202, 240);
+  border-radius: 10px;
+}
+
+.skill-color-js {
+  width: 60%;
+  height: 10px;
+  background-color: rgb(7, 207, 247);
+  border-radius: 10px;
+}
+
+.skill-color-html {
+  width: 95%;
+  height: 10px;
+  background-color: rgb(13, 202, 240);
+  border-radius: 10px;
+}
+
+.skill-color-react {
+  width: 70%;
+  height: 10px;
+  background-color: rgb(13, 202, 240);
+  border-radius: 10px;
+}
+
+.skill-color-bootstrap {
+  width: 99%;
+  height: 10px;
+  background-color: rgb(13, 202, 240);
+  border-radius: 10px;
+}
+
+.containt {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.my-skill-containt h2 {
+  font-size: 15px;
+  color: #3a3b3b;
+}
+
+
+.dowenload-button-bottom button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 45%;
+  font-size: 18px;
+  color: rgb(13, 202, 240);
+  background-color: white;
+  border-style: solid;
+  border-color: #747979;
+  margin-bottom: 100px;
+
+}
+
+.dowenload-button-bottom button:hover {
+  background-color: rgb(151, 148, 148);
+  color: white;
+  cursor: pointer;
+
+}
+
+.my-work-hedder {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: rgb(248, 249, 250);
+}
+
+.my-work-hedder h1 {
+  font-size: 109px;
+  font-weight: 700px;
+  color: #eaeff0;
+  padding-top: 120px;
+}
+
+.my-work-hedder h3 {
+  position: absolute;
+  margin-top: 60px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: black;
+}
+
+.work-sample {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.my-work-container {
+  margin: 20px 70px;
 }
