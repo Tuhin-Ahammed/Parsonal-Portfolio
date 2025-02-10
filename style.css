@@ -9,7 +9,7 @@
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.6)),
-    url(img/bk-2.jpg);
+    url(/img/bk-2.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
